@@ -15,7 +15,7 @@ public class LeaseCarApplication {
 //        SpringApplication.run(LeaseCarApplication.class, args);
         SpringApplication app = new SpringApplication(LeaseCarApplication.class);
         Environment env = app.run(args).getEnvironment();
-        log.info("启动成功!http://127.0.0.1:"+env.getProperty("server.port"));
+        log.info("启动成功!http://127.0.0.1:"+env.getProperty("server.port") + "/login/toLogin");
     }
 
 }
